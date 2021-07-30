@@ -1,13 +1,13 @@
 <?php
 echo "ok";
 
-$servername="teste";
+$servername="db";
 $username="root";
 $password="admin";
 
 try
 {
-	$con = new PDO("mysql:host=$servername;port=3307;dbname=basedados",$username,$password);
+	$con = new PDO("mysql:host=$servername;port=3306;dbname=basedados",$username,$password);
 	$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	echo("success");
 }
